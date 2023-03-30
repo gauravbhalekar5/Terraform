@@ -1,4 +1,3 @@
-/*
 provider "aws" {
   region     = "us-east-1"
   access_key = "PUT-YOUR-ACCESS-KEY-HERE"
@@ -24,7 +23,7 @@ resource "aws_s3_bucket" "mys3" {
 output "s3_bucket" {
   value = aws_s3_bucket.mys3.bucket_domain_name
 
-}*/
+}
 
 
 # The following code is using the Terraform AWS provider to create AWS Elastic IP and S3 Bucket. The provider block is used to configure the connection to the AWS region, access key, and secret key. 
