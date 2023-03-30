@@ -1,3 +1,5 @@
+# datatypes.tf
+
 provider "aws" {
   region     = "us-east-1"
   access_key = "PUT-YOUR-ACCESS-KEY-HERE"
@@ -31,4 +33,29 @@ resource "aws_elb" "bar" {
   tags = {
     Name = "foobar-terraform-elb"
   }
+}
+
+
+
+
+
+# variable.tf
+
+variable "usernumber" {
+  type = number
+}
+
+variable "elb_name" {
+  type = string
+  
+}
+
+variable "az" {
+  type = list
+  
+}
+
+variable "timeout" {
+  type = number
+  
 }
