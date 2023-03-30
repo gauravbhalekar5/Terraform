@@ -13,21 +13,4 @@ This variable can be used in your Terraform code to reference the IP address and
 ===============================================================================================================================
     
 
-variable "usernumber" {
-  type = number
-}
 
-variable "elb_name" {
-  type = string
-  
-}
-
-variable "az" {
-  type = list
-  
-}
-
-variable "timeout" {
-  type = number
-  
-}
