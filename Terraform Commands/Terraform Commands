@@ -1,0 +1,10 @@
+The following code refers to Terraform commands:
+# terraform init --> initializes Terraform for the current working directory.
+# terraform plan --> creates an execution plan, showing what actions Terraform will take based on the current configuration and state.
+# terraform validate --> checks the validity of the Terraform files.
+# terraform apply --> executes the actions proposed in the execution plan.
+# terraform destroy --> destroys all resources managed by the Terraform configuration.
+# terraform destroy -target aws_instance.MyEC2 --> destroys the resource named "MyEC2" in the aws_instance resource block.
+# In the provided Terraform code, "MyEC2" is an identifier used to uniquely identify the resource within the Terraform configuration. It is a human-readable name for internal reference only and is not passed to the cloud provider.
+# terraform refresh --> fetches the data with the current state of the infrastructure.
+# terraform show --> displays the current state of the Terraform-managed infrastructure in a human-readable output. It contains information about the resources managed by Terraform, including their metadata, attributes, and relationships with other resources.
